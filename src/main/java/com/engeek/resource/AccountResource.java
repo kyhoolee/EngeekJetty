@@ -13,7 +13,7 @@ import org.json.JSONObject;
 import com.engeek.logic.AccountLogic;
 import com.engeek.util.LoggerUtil;
 
-
+@Path("/account")
 public class AccountResource {
 	public static Logger logger = LoggerUtil.getDailyLogger("NewsResource_log");
 	
@@ -110,7 +110,7 @@ public class AccountResource {
 	}
 	
 
-	@Path("/shop/update_profile")
+	@Path("/update_profile")
 	@POST
 	@Produces("text/plain;charset=utf-8")
 	public Response updateShopProfile(String info, @Context HttpServletRequest req) {
